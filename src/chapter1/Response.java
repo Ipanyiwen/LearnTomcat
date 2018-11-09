@@ -36,7 +36,6 @@ public class Response {
                     i = fis.read(bytes);
                 }
             } else {
-                System.out.println("err");
                 String ErrorMsg = "HTTP/1.1 404 File Not Found\r\n"
                         + "Content-Type: text/html \r\n"
                         + "Content-Type: 23 \r\n\r\n"
@@ -44,8 +43,6 @@ public class Response {
 
                 outputStream.write(ErrorMsg.getBytes());
             }
-        }catch (Exception e) {
-            e.printStackTrace();
         }finally {
             if (fis != null) {
                 fis.close();
