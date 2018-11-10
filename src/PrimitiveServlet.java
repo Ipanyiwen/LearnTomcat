@@ -18,7 +18,6 @@ public class PrimitiveServlet implements Servlet {
         PrintWriter writer = servletResponse.getWriter();
         writer.println("hello world!!!");
         writer.print("hi sbsbsbsbsbsbbsbsbsb");
-
     }
 
     @Override
